@@ -23,7 +23,7 @@ class Triangle extends Figure{
 
     @Override
     public String pointsToString() {
-        return "(" + a.toString() + ")" + "(" + b.toString() + ")" + "(" + c.toString() + ")";
+        return a.toString() + b.toString() + c.toString();
     }
 
     @Override
@@ -43,6 +43,6 @@ class Triangle extends Figure{
         double deltaX = point2.getX() - point1.getY();
         double deltaY = point2.getY() - point1.getX();
 
-        return Math.sqrt(deltaX * deltaX - deltaY * deltaY);
+        return Math.sqrt(deltaX * deltaX + deltaY * deltaY);
     }
 }

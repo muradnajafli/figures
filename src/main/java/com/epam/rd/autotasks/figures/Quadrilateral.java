@@ -15,11 +15,14 @@ class Quadrilateral extends Figure{
     public double area() {
         Triangle triangle1 = new Triangle(a,b,c);
         Triangle triangle2 = new Triangle(a,c,d);
-        return triangle1.area() + triangle2.area();
+        double area = triangle1.area()+triangle2.area();
+        DecimalFormat df = new DecimalFormat("#.0");
+        String formattedArea = df.format(area);
+        return Double.parseDouble(formattedArea);
     }
     @Override
     public String pointsToString() {
-        return "(" + a.toString() + ")" + "(" + b.toString() + ")" + "(" + c.toString() + ")";
+        return a.toString() + b.toString() + c.toString();
     }
 
     @Override
