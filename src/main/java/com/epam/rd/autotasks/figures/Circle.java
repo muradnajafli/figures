@@ -15,11 +15,13 @@ class Circle extends Figure {
 
     @Override
     public String pointsToString() {
-        return "(" + center.getX() + "," + center.getY() + ")";
+        return "(" + center.getX() + "," + center.getY() + ")" + radius;
     }
 
     @Override
     public Point leftmostPoint() {
-        return center;
+        double leftX = center.getX() - radius;
+        Point leftmostPoint = new Point(leftX, center.getY());
+        return leftmostPoint;
     }
 }

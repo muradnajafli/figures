@@ -23,7 +23,7 @@ class Quadrilateral extends Figure{
     }
     @Override
     public String pointsToString() {
-        return a.toString() + b.toString() + c.toString();
+        return a.toString() + b.toString() + c.toString() + d.toString();
     }
 
     @Override
