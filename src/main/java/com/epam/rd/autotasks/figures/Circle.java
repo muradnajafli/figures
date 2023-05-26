@@ -19,7 +19,7 @@ class Circle extends Figure {
     }
 
     @Override
-    public Point leftMostPoint() {
+    public Point leftmostPoint() {
         return center;
     }
 }

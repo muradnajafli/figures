@@ -23,7 +23,7 @@ class Quadrilateral extends Figure{
     }
 
     @Override
-    public Point leftMostPoint() {
+    public Point leftmostPoint() {
         Point leftMost = a;
         if (b.getX()< leftMost.getX()) {
             leftMost = b;
