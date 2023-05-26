@@ -26,6 +26,6 @@ class Circle extends Figure {
     }
     @Override
     public String toString() {
-        return "(" + center.getX() + "," + center.getY() + ")" + radius;
+        return getClass().getSimpleName() + "[(" + center.getX() + "," + center.getY() + ")" + radius + "]";
     }
 }
