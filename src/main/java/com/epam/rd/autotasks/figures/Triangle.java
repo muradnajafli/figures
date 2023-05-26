@@ -1,5 +1,4 @@
 package com.epam.rd.autotasks.figures;
-
 class Triangle extends Figure{
     private Point a;
     private Point b;
@@ -40,8 +39,8 @@ class Triangle extends Figure{
     }
 
     private double distance(Point point1, Point point2) {
-        double deltaX = point2.getX() - point1.getY();
-        double deltaY = point2.getY() - point1.getX();
+        double deltaX = point2.getX() - point1.getX();
+        double deltaY = point2.getY() - point1.getY();
 
         return Math.sqrt(deltaX * deltaX + deltaY * deltaY);
     }

@@ -1,4 +1,5 @@
 package com.epam.rd.autotasks.figures;
+import java.text.DecimalFormat;
 
 class Quadrilateral extends Figure{
     private Point a;
@@ -40,4 +41,3 @@ class Quadrilateral extends Figure{
         return leftMost;
     }
 }
-
