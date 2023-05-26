@@ -15,7 +15,7 @@ class Circle extends Figure {
 
     @Override
     public String pointsToString() {
-        return "(" + center.getX() + "," + center.getY() + ")" + this.radius;
+        return "(" + center.getX() + "," + center.getY() + ")";
     }
 
     @Override
@@ -23,5 +23,9 @@ class Circle extends Figure {
         double leftX = center.getX() - radius;
         Point leftmostPoint = new Point(leftX, center.getY());
         return leftmostPoint;
+    }
+    @Override
+    public String toString() {
+        return "(" + center.getX() + "," + center.getY() + ")" + radius;
     }
 }
